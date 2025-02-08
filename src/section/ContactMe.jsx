@@ -33,7 +33,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="contact" className="bg-gray-900 min-h-screen flex items-center justify-center py-12 px-4">
+    <div id="contact" className="bg-gray-900 min-h-screen flex items-center justify-center py-12 pt-[6rem] px-4">
       <div className="max-w-2xl w-lg bg-white p-8 rounded-lg shadow-lg ">
         <h2 className="text-2xl font-semibold text-center mb-6">Contact Me</h2>
         

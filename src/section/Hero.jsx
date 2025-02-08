@@ -1,45 +1,42 @@
 import Logo from '../assets/img.jpg';
+import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
-    <section id="hero" className="hero bg-gray-900  text-white h-screen flex flex-col justify-center text-center pt-24">
-
-
-      <div className="max-w-[80%] mx-auto items-center gap-3  max-h-max flex">
+    <section id="hero" className="hero bg-gray-900 pt-[6rem] text-white h-screen flex flex-col justify-center items-center text-center pt-24">
+      <div className="max-w-5xl justify-center  mx-auto flex flex-col md:flex-row items-center gap-6 px-6">
         
-        <div className="text-xl text-left flex flex-col mb-6 px-10 gap-3">
-        <h1 className="text-4xl font-bold mb-4  text-left">
-        Welcome to My Portfolio</h1>
-          <p >
-            I&apos;m a self-taught web developer and Mobile App Developer with experience
-            in designing new features from ideation to production,
-            implementation of wireframes and design flows into high-performance
-            software applications. I take into consideration the user experience
-            while writing reusable and efficient code. I passionately combine
-            good design, technology, and innovation
-            in all my projects, which I like to accompany from the first idea to release.
-            Currently, I&apos;m focused on backend development.
-
+     
+        <div className="md:w-1/2 text-left flex flex-col gap-4 ">
+          <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
+          <Typewriter
+          options={{
+            strings: ["Hi I'm Mohamed", "Full-Stack Developer","Creative Thinker"],
+            autoStart: true,
+            loop: true,
+            delay: 75,
+          }}
+          />
+          <p>
+            I&apos;m a self-taught web and mobile app developer, passionate about 
+            designing and building high-performance applications. My focus is on 
+            backend development, creating efficient and reusable code.
           </p>
           <a
             href="#contact"
-            className="bg-blue-500 text-center w-fit text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-800 transition"
+            className="bg-gray-900 w-fit text-white px-4 py-2 border border-gray-600 rounded-lg text-lg font-semibold hover:bg-gray-800 transition"
           >
             Get in Touch
           </a>
-
         </div>
 
-
-        <span className="w-[300vh] h-[300px] -mt-20 border rounded-full" >
+        <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-4 border-gray-700  rounded-full overflow-hidden shadow-[0_0_30px_8px_rgba(0,0,255,0.5)]">
           <img
             src={Logo}
-            alt="img"
-            className="w-full h-full shadow-[0_0_30px_8px_rgba(0,0,255,0.5)]
-               transition duration-300 ease-in-out object-top object-cover rounded-full"
+            alt="Profile"
+            className="w-full h-full object-cover object-top"
           />
-        </span>
-
+        </div>
 
       </div>
     </section>
@@ -47,3 +44,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
