@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Card = ({ skillName, icon, description }) => {
   return (
-    <div className="bg-gray-900 text-white p-6 rounded-lg shadow-md hover:shadow-xl transition hover:scale-105">
+    <div className="bg-gray-900 text-white border border-gray-500 p-6 rounded-lg shadow-md hover:shadow-xl transition hover:scale-105">
       <div className="flex items-center justify-center mb-4">
         <span className="w-12 h-12">{icon}</span>
       </div>

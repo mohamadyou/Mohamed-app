@@ -34,7 +34,7 @@ const ContactMe = () => {
 
   return (
     <div id="contact" className="bg-gray-900 min-h-screen flex items-center justify-center py-12 pt-[6rem] px-4">
-      <div className="max-w-2xl w-lg bg-white p-8 rounded-lg shadow-lg ">
+      <div className="max-w-2xl w-lg bg-gray-900 border border-gray-500 text-gray-300 p-8 rounded-lg shadow-lg ">
         <h2 className="text-2xl font-semibold text-center mb-6">Contact Me</h2>
         
         {isSubmitted ? (
@@ -42,10 +42,11 @@ const ContactMe = () => {
             <p>Thank you for reaching out! I will get back to you soon.</p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit}>
-            <div className="flex flex-col gap-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="mb-4">
+          <form onSubmit={handleSubmit}
+          >
+            <div className="flex flex-col gap-4 ">
+              <div className="grid grid-cols-2 gap-4 ">
+                <div className="mb-4 ">
                   <label htmlFor="name" className="block text-sm font-semibold mb-2">
                     Name
                   </label>
@@ -56,7 +57,7 @@ const ContactMe = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-100"
+                    className="w-full px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 bg-gray-900"
                   />
                 </div>
                 <div className="mb-4">
@@ -70,7 +71,7 @@ const ContactMe = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-100"
+                    className="w-full px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 bg-gray-900"
                   />
                 </div>
               </div>
@@ -86,7 +87,7 @@ const ContactMe = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-100"
+                  className="w-full px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 bg-gray-900"
                 />
               </div>
 
@@ -101,7 +102,7 @@ const ContactMe = () => {
                   onChange={handleInputChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 bg-gray-100"
+                  className="w-full px-4 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-600 bg-gray-900"
                 ></textarea>
               </div>
             </div>
@@ -109,7 +110,7 @@ const ContactMe = () => {
             <div className="text-center mt-6">
               <button
                 type="submit"
-                className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="bg-gray-900 text-white px-6 py-2 rounded-md border border-gray-500 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600"
               >
                 Send Message
               </button>

@@ -30,7 +30,7 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="w-48 h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 border-4 border-gray-700  rounded-full overflow-hidden shadow-[0_0_30px_8px_rgba(0,0,255,0.5)]">
+        <div className="w-48 h-48 md:w-56 md:h-56  lg:w-64 lg:h-64 border-4 border-gray-700  rounded-full overflow-hidden shadow-[0_0_30px_8px_rgba(0,0,255,0.5)]">
           <img
             src={Logo}
             alt="Profile"
