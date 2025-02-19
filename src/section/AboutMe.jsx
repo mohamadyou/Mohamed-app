@@ -18,7 +18,7 @@ const AboutMe = () => {
       </div>
       <div className="flex justify-center items-center mt-10">
       
-        <a href="/CV.pdf" download className="bg-gray-900 rounded-lg p-2 border hover:bg-gray-700 text-white mb-32 border-gray-200">
+        <a href="/CV.pdf" download className="bg-gray-900 rounded-lg p-2 w-[22px] border hover:bg-gray-700 text-white mb-32 border-gray-200">
           Download CV
         </a>
       </div>
