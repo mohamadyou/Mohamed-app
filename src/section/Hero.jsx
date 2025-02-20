@@ -5,22 +5,24 @@ const Hero = () => {
   return (
     <section id="hero" className="hero bg-gray-900 pt-[6rem] text-white h-screen flex flex-col justify-center items-center text-center pt-24">
       <div className="max-w-5xl justify-center  mx-auto flex flex-col md:flex-row items-center gap-6 px-6">
-        
-     
+
+
         <div className="md:w-1/2 text-left flex flex-col gap-4 ">
           <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
           <Typewriter
-          options={{
-            strings: ["Hi I'm Mohamed", "Full-Stack Developer","Creative Thinker"],
-            autoStart: true,
-            loop: true,
-            delay: 75,
-          }}
+            options={{
+              strings: ["Hi I'm Mohamed", "Full-Stack Developer", "Creative Thinker"],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+            }}
           />
           <p>
-            I&apos;m a self-taught web and mobile app developer, passionate about 
-            designing and building high-performance applications. My focus is on 
-            backend development, creating efficient and reusable code.
+            I&apos;m Self-taught Fullstack Developer skilled in
+            frontend (HTML5, CSS3, JavaScript, React.js, TailwindCSS)
+            and backend (Node.js, Express, MongoDB), passionate about building high-performance,
+            scalable applications. Focused on writing efficient,
+            reusable code and continuously learning new technologies
           </p>
           <a
             href="#contact"
